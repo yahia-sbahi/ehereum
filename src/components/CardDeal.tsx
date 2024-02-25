@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { card } from "../assets";
 import styles, { layout } from "../style";
-
+import Image from "next/image";
 const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
@@ -16,7 +16,7 @@ const CardDeal = () => (
       <Button styles="mt-10" />
     </div>
     <div className={layout.sectionImg}>
-      <img src={card} alt="card" className="w-[100%] h-[100%]" />
+      <Image src={card} alt="card" className="w-[100%] h-[100%]" />
     </div>
   </section>
 );
